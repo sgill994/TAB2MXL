@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="67.0" prefWidth="334.0" style="-fx-background-color: #DEB9B9;" text="Keys">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="85.0" prefHeight="20.0" prefWidth="39.0" text="Key">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="149.0" prefHeight="20.0" prefWidth="85.0">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="keyOption" alignment="CENTER" layoutX="110.0" layoutY="80.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="178.0" style="-fx-border-radius: 10; -fx-border-color: #000000; -fx-border-width: 2;" text="Select Key" textAlignment="CENTER">
+        <items>
+            <RadioMenuItem fx:id="key1" mnemonicParsing="false" onAction="#chosenkey1" text="C major, A minor" />
+            <RadioMenuItem fx:id="key2" mnemonicParsing="false" onAction="#chosenKey2" text="G major, E minor" />
+            <RadioMenuItem fx:id="key3" mnemonicParsing="false" onAction="#chosenKey3" text="D major, B minor" />
+            <RadioMenuItem fx:id="key4" mnemonicParsing="false" onAction="#chosenKey4" text="A major, F# minor" />
+            <RadioMenuItem fx:id="key5" mnemonicParsing="false" onAction="#chosenKey5" text="E major, C# minor" />
+            <RadioMenuItem fx:id="key6" mnemonicParsing="false" onAction="#chosenKey6" text="B major, G# minor" />
+            <RadioMenuItem fx:id="key7" mnemonicParsing="false" onAction="#chosenKey7" text="F# major, D# minor" />
+            <RadioMenuItem fx:id="key8" mnemonicParsing="false" onAction="#chosenKey8" text="C# major, A# minor" />
+            <RadioMenuItem fx:id="key9" mnemonicParsing="false" onAction="#chosenKey9" text="C♭ major, A♭ minor" />
+            <RadioMenuItem fx:id="key10" mnemonicParsing="false" onAction="#chosenKey10" text="G♭ major, E♭ minor" />
+            <RadioMenuItem fx:id="key11" mnemonicParsing="false" onAction="#chosenKey11" text="D♭ major, B♭ minor" />
+            <RadioMenuItem fx:id="key12" mnemonicParsing="false" onAction="#chosenKey12" text="A♭ major, F minor" />
+            <RadioMenuItem fx:id="key13" mnemonicParsing="false" onAction="#chosenKey13" text="E♭ major, C minor" />
+            <RadioMenuItem fx:id="key14" mnemonicParsing="false" onAction="#chosenKey14" text="B♭ major, G minor" />
+            <RadioMenuItem fx:id="key15" mnemonicParsing="false" onAction="#chosenKey15" text="F major, D minor" />
+        </items>
+      </MenuButton>
+      <Button fx:id="cancelKey" layoutX="12.0" layoutY="197.0" mnemonicParsing="false" onAction="#cancelKey" prefHeight="25.0" prefWidth="68.0" text="Cancel" />
+      <Button fx:id="saveKey" layoutX="252.0" layoutY="197.0" mnemonicParsing="false" onAction="#saveKey" prefHeight="25.0" prefWidth="68.0" text="Save" />
+   </children>
+</Pane>
+

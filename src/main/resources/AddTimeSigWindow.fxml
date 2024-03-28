@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="67.0" prefWidth="515.0" style="-fx-background-color: #DEB9B9;" text="Specific Measure Translation Signiture">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="111.0" prefHeight="20.0" prefWidth="39.0" text="Beat">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="161.0" prefHeight="20.0" prefWidth="85.0" text="Beat Time">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="beatOption" alignment="CENTER" layoutX="308.0" layoutY="106.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="178.0" style="-fx-border-radius: 10; -fx-border-color: #000000; -fx-border-width: 2;" text="Select Beat" textAlignment="CENTER">
+        <items>
+            <RadioMenuItem fx:id="beat1" mnemonicParsing="false" onAction="#beat1Select" text="2" />
+            <RadioMenuItem fx:id="beat2" mnemonicParsing="false" onAction="#beat2Select" text="3" />
+            <RadioMenuItem fx:id="beat3" mnemonicParsing="false" onAction="#beat3Select" text="4" />
+            <RadioMenuItem fx:id="beat4" mnemonicParsing="false" onAction="#beat4Select" text="6" />
+            <RadioMenuItem fx:id="beat5" mnemonicParsing="false" onAction="#beat5Select" text="9" />
+            <RadioMenuItem fx:id="beat6" mnemonicParsing="false" onAction="#beat6Select" text="12" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="beatTimeOption" alignment="CENTER" layoutX="308.0" layoutY="156.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="178.0" style="-fx-border-radius: 10; -fx-border-color: #000000; -fx-border-width: 2;" text="Select Beat Time">
+         <items>
+            <RadioMenuItem fx:id="beatTime1" mnemonicParsing="false" onAction="#beatTime1" text="1" />
+            <RadioMenuItem fx:id="beatTime2" mnemonicParsing="false" onAction="#beatTime2" text="2" />
+            <RadioMenuItem fx:id="beatTime3" mnemonicParsing="false" onAction="#beatTime3" text="4" />
+            <RadioMenuItem fx:id="beatTime4" mnemonicParsing="false" onAction="#beatTime4" text="8" />
+            <RadioMenuItem fx:id="beatTime5" mnemonicParsing="false" onAction="#beatTime5" text="16" />
+         </items>
+      </MenuButton>
+      <Button fx:id="cancelEditTSButton" layoutX="18.0" layoutY="255.0" mnemonicParsing="false" onAction="#cancelTimeSigTS" prefHeight="25.0" prefWidth="68.0" text="Cancel" />
+      <Button fx:id="EditSaveTimeSig" layoutX="427.0" layoutY="255.0" mnemonicParsing="false" onAction="#saveTimeSigClickedEdit" prefHeight="25.0" prefWidth="68.0" text="Save" />
+      <Label layoutX="78.0" layoutY="78.0" text="This time signitre will be added to a specific time signiture only. ">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="startTimeSigField" layoutX="179.0" layoutY="213.0" prefHeight="25.0" prefWidth="121.0" promptText="Start Measure" />
+      <TextField fx:id="endTimeSigField" layoutX="367.0" layoutY="213.0" prefHeight="25.0" prefWidth="121.0" promptText="End Measure" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="216.0" prefHeight="20.0" prefWidth="85.0" text="Measure">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
